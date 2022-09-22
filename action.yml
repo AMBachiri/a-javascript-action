@@ -1,0 +1,25 @@
+name: "my javascript action"
+
+description: "Simple greeting with action"
+
+inputs:
+  first-greeting:
+    description: "who would you like to greet in the console"
+    required: true
+    default: "Mahmoud"
+  second-greeting:
+    description: "another person to greet"
+    required: true
+    default: "Anabeth"
+  third-greeting:
+    description: "a third person to greet"
+    required: true
+    default: "Nirmine"
+  last-one-greeted:
+    description: "last person greeted"
+outputs:
+  last-one-greeted:
+    description: "last person greeted"
+runs:
+  using: "node12"
+  main: "index.js"
